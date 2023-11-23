@@ -1,18 +1,28 @@
-def fibonacci_sum(limit):
-    a, b = 1, 2
-    even_sum = 0
-    
-    while a <= limit:
-        if a % 2 == 0:
-            even_sum += a
-        a, b = b, a + b
-    
-    return even_sum
+def generate_fibonacci(limit):
+    fib_sequence = [1, 2]
+    while fib_sequence[-1] + fib_sequence[-2] <= limit:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
 
-# Set the limit to four million
-limit = 4000000
+def filter_even_numbers(sequence):
+    return [num for num in sequence if num % 2 == 0]
 
-# Calculate the sum of even-valued terms in the Fibonacci sequence
-result = fibonacci_sum(limit)
+def main():
+    limit = 4000000
 
-print("Sum of even-valued terms in the Fibonacci sequence below", limit, "is:", result)
+    # Generate Fibonacci sequence
+    fibonacci_sequence = generate_fibonacci(limit)
+
+    # Filter even numbers
+    even_numbers = filter_even_numbers(fibonacci_sequence)
+
+    # Print even numbers
+    print("Even numbers in the Fibonacci sequence up to 4 million:")
+    print(even_numbers)
+
+    # Print the sum of even numbers
+    even_sum = sum(even_numbers)
+    print(f"\nSum of even numbers: {even_sum}")
+
+if __name__ == "__main__":
+    main()
