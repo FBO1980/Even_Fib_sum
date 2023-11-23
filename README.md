@@ -2,8 +2,8 @@
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms
 
 ## You
-write in Pyhton a script with the folowing functionality: 
-print the even numbers in the Fibonacci sequence whose values do not exceed four million. then print the sum 
+Write in Python a script with the following functionality: 
+Print the even numbers in the Fibonacci sequence whose values do not exceed four million. Then print the sum.
 
 ## ChatGPT
 Certainly! Here's a Python script that accomplishes the specified functionality:
