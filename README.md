@@ -39,3 +39,13 @@ if __name__ == "__main__":
     main()
 ```
 Copy and paste this code into a Python script (e.g., a .py file) and run it. It will generate the Fibonacci sequence up to four million, filter out the even numbers, print them, and finally, print the sum of those even numbers.
+
+```
+>>> (executing file "fibonacci_sum.py")
+Even numbers in the Fibonacci sequence up to 4 million:
+[2, 8, 34, 144, 610, 2584, 10946, 46368, 196418, 832040, 3524578]
+
+Sum of even numbers: 4613732
+
+>>>
+```
